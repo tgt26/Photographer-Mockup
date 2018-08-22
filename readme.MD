@@ -1,8 +1,7 @@
 # Photographer's Website
 
-<img src="images/website-screenshot.jpg" title="Webstie Preview" alt="Screenshot of the website" width="70%" style="display: inline;">
-
-<img src="images/responsive-screenshot.jpg" title="Responsive site" alt="Screenshot of the website"  width="21%" style="display: inline; padding-left:1rem;">
+![Website Preview](images/website-screenshot.png)
+![Responsiveness Preview](images/responsive-screenshot.png)
 
 ## Description
 
