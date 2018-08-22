@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+/*-------------------------------------------- 
+				
+				CORE STYLES
+
+---------------------------------------------*/
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	background-color: #f1f1f1;
+}
+
+footer {
+	color: #5e5d5d;
+	height: auto;
+	background-color: #fff;
+	padding: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*-------------------------------------------- 
+				
+				NAVIGATION BAR
+
+---------------------------------------------*/
+
+#topNav {
+	height: 70px;
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#topNav a {
+	text-decoration: none;
+	color: #5e5d5d;
+	padding: 14px 8px;
+	line-height: 50px;
+}
+
+#topNav a:hover,
+.sidenav a:hover {
+	color: #4595f7;
+}
+
+.social-logos img {
+	width: 16px;
+	margin-top: 15px;
+}
+
+.social-logos:last-child {
+	margin-right: 60px;
+}
+
+.open-btn {
+	display: none;
+	margin-right: 10px;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	overflow-x: hidden;
+	transition: 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	padding-top: 60px;
+	box-shadow: -1px 0px 5px -1px #00000036;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav .close-btn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 2.5rem;
+	margin-left: 50px;
+}
+
+/*-------------------------------------------- 
+				
+				LANDING PAGE
+
+---------------------------------------------*/
+
+.landing-wrapper {
+	height: 100vh;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+.bgimg-1 {
+	position: relative;
+	opacity: 0.85;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../images/red.jpg");
+	height: 100vh;
+	width: 100vw;
+}
+
+.shadow {
+	color: #fff;
+	font-family: Arvo;
+	font-weight: bold;
+	text-shadow: -2px -2px 0 #222, 2px -2px 0 #222, -2px 2px 0 #222, 2px 2px 0 #222, 3px 3px 0 #fff, 4px 4px 0 #fff, 5px 5px 0 #fff, 6px 6px 0 #fff;
+	line-height: 0.8em;
+	letter-spacing: 0.1em;
+	-webkit-transform: scaleY(0.7);
+	-moz-transform: scaleY(0.7);
+	transform: scaleY(0.7);
+	text-align: center;
+	margin: 0;
+}
+
+.text2 {
+	font-size: 139px;
+	/*margin-bottom:40%;*/
+	float: bottom;
+}
+
+.text3 {
+	font-size: 80px;
+}
+
+/*.caption {
+  position: absolute;
+  left: 2%;
+  top: 75%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}*/
+
+/*-----------------------------------------------
+				
+				PORTFOLIO PAGE
+
+-----------------------------------------------*/
+
+.grid-items {
+	position: relative;
+}
+
+.grid-items img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-items:hover>.interactive-overlay,
+.grid-items:hover>.like-num {
+	opacity: 1;
+}
+
+.grid-items img:hover {
+	opacity: 0.75;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.interactive-overlay {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	opacity: 0;
+	cursor: pointer;
+	color: white;
+}
+
+.interactive-overlay:hover {
+	color: #ccc;
+}
+
+.like-num p:hover {
+	color: #ccc;
+}
+
+.red {
+	color: #e03939;
+}
+
+.like-num {
+	opacity: 0;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 4rem;
+	bottom: 1.5rem;
+	color: white;
+	cursor: pointer;
+}
+
+/* -----------------------------------------
+			
+			CLIENT SHOWCASE PAGE
+
+-------------------------------------------- */
+
+.client-main {
+	background-color: #f1f1f1;
+	height: 90vh;
+}
+
+.client-header {
+	margin-left: 30px;
+	color: #5e5d5d;
+}
+
+.client-header h1 {
+	font-weight: 200;
+	margin-bottom: 0;
+}
+
+.client-header p {
+	margin-top: 5px;
+}
+
+.album-container {
+	width: 100%;
+	height: 100%;
+}
+
+.picture-frame {
+	width: 90%;
+	height: 100%;
+	max-height: 500px;
+}
+
+.thumbnail-container {
+	background-image: url(https://source.unsplash.com/800x1200/?people,portrait);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.thumbnail-container-2 {
+	background-image: url(https://source.unsplash.com/800x1200/?animals,pets);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.thumbnail-container-3 {
+	background-image: url(https://source.unsplash.com/800x1200/?snow,mountain);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	background: white;
+	width: 100%;
+	transition: .5s ease;
+	color: black;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.picture-frame:hover .overlay {
+	opacity: 1;
+}
+
+.date {
+	font-size: .8rem;
+}
+
+/*---------------------------------------------
+				
+				ABOUT ME PAGE
+
+-----------------------------------------------*/
+
+.about-me {
+	width: 100%;
+	background-color: #fff;
+	/* max-width: 960px; */
+}
+
+.about-me-background {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/about-me-background.jpg);
+	background-size: cover;
+}
+
+.about-me-inner-text {
+	padding: 1.5rem 1rem;
+	color: #666;
+}
+
+.about-me-inner-text p {
+	line-height: 1.5rem;
+}
+
+/* -----------------------------------------
+				
+				CONTACT PAGE
+
+-------------------------------------------- */
+
+.contact-main {
+	height: 90vh;
+	width: 100%;
+}
+
+.get-in-touch {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/stret-lamp.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.get-in-touch-inner-text {
+	background-color: #fff;
+	/* width: 453px; */
+	color: #5e5d5d;
+}
+
+.get-in-touch-inner-text h1 {
+	font-weight: 100;
+}
+
+/* .get-in-touch form {
+	display: flex;
+	flex-direction: column;
+} */
+
+.get-in-touch input,
+.get-in-touch textarea {
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.get-in-touch-inner-text button {
+	background-color: #4595f7;
+	color: #FFFFFF;
+	border: none;
+	padding: 1rem;
+}
+
+/*-----------------------------------------------
+				
+				BOOK ONLINE
+
+-----------------------------------------------*/
+
+.band {
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+hr {
+	width: 90%;
+	color: #000;
+}
+
+.thumb {
+	height: 50%;
+	width: 100%;
+}
+
+.service {
+	width: 90%;
+	position: relative;
+	padding: 1rem;
+	color: #2C2C2B;
+}
+
+.service h2 {
+	font-weight: 100;
+	font-size: 1rem;
+}
+
+.button {
+	background-color: #33adff;
+	border: none;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.title {
+	width: 90%;
+	color: #616161;
+	font-weight: 100;
+	margin: 0 auto;
+}
+
+/*-----------------------------------------------
+				
+				MEDIA QUERIES
+
+-----------------------------------------------*/
+
+@media screen and (max-width:768px) {
+	#topNav a:not(:last-child) {
+		display: none;
+	}
+	.open-btn {
+		display: block;
+	}
+}
+
+@media (min-width: 320px) {
+	/* Portfolio Page */
+	.grid-container {
+		display: block;
+	}
+	.grid-items {
+		padding: 1rem 0;
+	}
+	/* About Page */
+	.about-me-background {
+		max-width: 100%;
+		height: 45vh;
+	}
+	/* Client Showcase Page */
+	.album-container {
+		display: block;
+	}
+	.overlay {
+		opacity: 1;
+	}
+	.picture-frame {
+		margin: 20px auto;
+		width: 90%;
+	}
+	/* Contact Page */
+	.get-in-touch {
+		height: 50%;
+	}
+	.get-in-touch-inner-text {
+		padding: 1rem;
+	}
+	.get-in-touch-inner-text form {
+		display: grid;
+		width: 100%;
+	}
+	.get-in-touch-inner-text input,
+	textarea {
+		padding: .5rem;
+	}
+}
+
+@media (min-width: 375px) {
+	/* About Page */
+	.about-me {
+		position: static;
+	}
+	.about-me .about-me-background {
+		height: 60vh;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 500px) {
+	.about-me .about-me-background {
+		height: 45vh;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	/* Book Online Page */
+	.service {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	hr {
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 768px) {
+	/* Portfolio Page */
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid-items {
+		padding: 0;
+		max-height: 500px;
+		overflow: hidden;
+	}
+	/* About Page */
+	.about-me .about-me-background {
+		height: 80vh;
+	}
+	.about-me-inner-text {
+		padding: 1.5rem 3rem;
+	}
+	/* Client Showcase Page */
+	.picture-frame {
+		max-width: inherit;
+	}
+	/* Contact Page */
+	.get-in-touch {
+		height: 65%;
+	}
+	/* Book Online Page */
+	.service {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	hr {
+		max-width: 600px;
+	}
+}
+
+@media (min-width: 1024px) {
+	/* Portfolio Page */
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.grid-items {
+		padding: 0;
+		/* max-height: 550px; */
+		overflow: hidden;
+	}
+	/* Aout Page */
+	.about-me {
+		position: relative;
+		height: 100vh;
+	}
+	.about-me .about-me-background {
+		height: 90vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-position: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.about-me-inner-text {
+		position: absolute;
+		right: 5px;
+		bottom: 15%;
+		width: 35%;
+		padding: 1rem;
+		background-color: #fff;
+		opacity: 0.9;
+		max-width: 450px;
+	}
+	/* Client Showcase Page */
+	.album-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+		justify-items: center;
+	}
+	.overlay {
+		opacity: 0;
+	}
+	/* Contact Page */
+	.contact-main {
+		position: relative;
+	}
+	.get-in-touch {
+		height: 90vh;
+	}
+	.get-in-touch-inner-text {
+		position: absolute;
+		left: 1rem;
+		bottom: 2rem;
+		width: 400px;
+	}
+	/* Book Online Page */
+	hr {
+		display: none;
+	}
+	.band {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		align-items: center;
+		height: 80vh;
+		max-width: 1100px;
+		margin: 0 auto;
+		grid-gap: 1rem;
+	}
+	.service {
+		background-color: #fff;
+		padding: 0;
+	}
+	.service section {
+		padding: 3rem;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1440px) {
+	/* Portfolio Page */
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	/* Client Showcase Page */
+	.album-container {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1440px) and (min-width: 1300px) {
+	.about-me .about-me-background {
+		background-size: cover;
+	}
+}
